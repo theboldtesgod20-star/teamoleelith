@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para leelith♥ v2</title>
+    <link rel="icon" type="image/png" href="melon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+    body {
+        cursor: url('smoking-boy-kisser.gif') 3 3, auto !important;
+        background-color: #fffcf8;
+        color: hsl(0, 100%, 11%);
+        margin-top: 100px;
+        text-align: center;
+        font-family: 'Patrick Hand', cursive;
+        position: relative; 
+        min-height: 100vh;
+        padding-bottom: 150px;
+    }
+    
+    a, button, .boton-musica-chulo, .love, .imagen-flotante, .imagen-flotante:hover {
+        cursor: url('smoking-boy-kisser.gif') 3 3, pointer !important;
+    }
+
+    input, textarea {
+        cursor: url('smoking-boy-kisser.gif') 3 3, text !important;
+    }
+
+    .boton-musica-chulo {
+        background-color: #988a8a;
+        color: #fff;
+        border: 2px solid #000000;
+        padding: 10px 20px;
+        font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+        text-decoration: none; 
+        display: inline-block;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .boton-musica-chulo:hover {
+        background-color: #444;
+        transform: scale(1.1);
+    }
+    .love {
+        color: hsl(0, 100%, 11%);
+        text-decoration: none;
+    }
+    .love:hover {
+        text-decoration: none;
+    }
+    
+    .imagen-flotante {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 120px; 
+        image-rendering: pixelated;
+        transition: transform 0.2s;
+        z-index: 1000;
+    }
+    .imagen-flotante:hover {
+        transform: scale(1.1);
+    }
+
+    /* Caja estilo OFF Remake / Diálogo RPG con flores */
+    .caja-dialogo-flores {
+        background-color:  #f8e9d4;
+        color: hsl(0, 100%, 7%);
+        border: 4px solid hsl(0, 100%, 15%);
+        border-radius: 15px;
+        width: 80%;
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 20px;
+        position: relative;
+        text-align: left;
+        font-family: monospace; /* Fuente retro */
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+ 
+
+    /* Firma interna con espaciado */
+    .firma-rpg {
+        white-space: pre; /* Respeta los espacios y saltos de línea */
+        text-align: center;
+        margin-top: 15px;
+    }
+    </style>
+</head>
+<body>
+<a href="SECRET.html" target="_blank" class="love">
+    <h1>★ Te amo, <b>Leelith</b> ★</h1>
+</a>
+    <div>
+        <button class="boton-musica-chulo" id="btn-musica">¿Quieres ver una sorpresa? :3</button>
+        <audio id="audio-fondo" src="Valentine.mp3" loop></audio>
+        <audio id="audio-boykisser" src="boykiser-meow.mp3"></audio>
+    </div>
+
+ 
+
+
+    <p>como me encantas, te hice un arg para ti solito</p>
+
+    <div>
+        <a href="fase1.html" class="boton-musica-chulo">Cuanto te quiero</a>
+        <a href="fase2.html" class="boton-musica-chulo">Cuanto te amo</a>
+        <a href="fase3.html" class="boton-musica-chulo">Cuanto te aprecio</a>
+        <a href="fase4.html" class="boton-musica-chulo">Cuanto te adoro</a>
+        <a href="fase5.html" class="boton-musica-chulo">Cuanto me gustas</a>
+        <a href="fase6.html" class="boton-musica-chulo">cuanto me atraes</a>
+    </div>
+
+    <img src="gatillo.gif" alt="teamo">
+    
+    <p>no lo hare complejo, pq se q estas bien pendejo</p>
+    <p>pero es una forma de cariño</p>
+    <p><b>Leelith </b>, te amo mucho</p>
+    <p>un monton <b> Leelith </b></p>
+    <p>se que te dara flojera hacer todo esto, pero no me importa</p>
+    <p>solo quiero q seas feliz, y lo quere por siempre</p>
+    <p>te amo :3</p>
+    <p>no quiero q desaproveches tu vida</p>
+    <p>pasar todo el dia aburrido tampoco </p>
+    <P>es... ironicamente aburrido</P>
+    <p>entonces estoy haciendo esto para q tengas algo q hacer :3</p>
+    <p>algo para matar el aburrimiento</p>
+    <p>te amo, <b>Leelith</b></p>
+
+    <a href="CLAVE.html">
+        <img src="elhijodesuputamadre.png" alt="te amo" class="imagen-flotante" id="img-hijo-puta">
+    </a>
+
+    <script>
+        const botonMusica = document.getElementById('btn-musica');
+        const audioFondo = document.getElementById('audio-fondo');
+        const imgHijoPuta = document.getElementById('img-hijo-puta');
+        const audioBoykisser = document.getElementById('audio-boykisser');
+
+        botonMusica.addEventListener('click', () => {
+            if (audioFondo.paused) {
+                audioFondo.play();
+                botonMusica.textContent = "Pausar musica ";
+            } else {
+                audioFondo.pause(); /* Corregí un pequeño error tipográfico aquí (audioFondon -> audioFondo) */
+                botonMusica.textContent = "¿Quieres ver una sorpresa? :3";
+            }
+        });
+
+        if (imgHijoPuta) {
+            imgHijoPuta.addEventListener('mouseenter', () => {
+                audioBoykisser.currentTime = 0; 
+                audioBoykisser.play().catch(error => {
+                    console.log("Error al reproducir el sonido del boykisser:", error);
+                });
+            });
+        }
+    </script>
+    <div class="caja-dialogo-flores">
+        <div class="firma-rpg">
+
+DE:                      PARA:
+✿Migo✿                 <b>★Leelith★</b>
+
+        </div>
+    </div>
+</body>
+</html>
